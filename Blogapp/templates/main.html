@@ -1,0 +1,51 @@
+{% load staticfiles %}
+<!--staticfile을 사용하겠다고 알림-->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+        crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet">
+    <title>LIKELION</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            border: 0;
+            padding: 0;
+            background: url('{% static 'Lion.jpg' %}') no-repeat center center fixed;
+            min-height : 100%;
+            background-position: cover;
+            background-size: cover;
+        }
+        .main,a{
+            color:black;
+            font-size:200%;
+            font-weight:bold;
+            font-family: 'Shadows Into Light', cursive;
+            text-align: center;
+            padding-top: 10%
+        }
+        a{
+            text-decoration: none !important
+        }
+    </style>
+</head>
+
+
+<body>
+    <div class="main">
+        <a href="{% url 'home'%}" style="color:black">LIKELION</a>
+    </div>
+</body>
+
+
+
+</html>
