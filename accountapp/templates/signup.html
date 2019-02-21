@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block contents %}
+<div class="container">
+    <h1>Sign Up!</h1>
+
+    <form method="POST" action="{%url 'signup'%}"> <!--method가 없으면 get이 기본값-->
+        {%csrf_token %} <!--보안을 위해 사용하는 난수발생기?-->
+        Username:
+        <br>
+        <input name="username" type="text" value="">
+        <br>
+        Password: 
+        <br> 
+        <input name="password1" type="password" value="">
+        <br>
+        Confirm Password:
+        <br>
+        <input name="password2" type="password" value="">
+        <br>
+        <br>
+        <input class="btn btn-primary" type="submit" value="Sign Up!">
+    </form>
+</div>
+
+{%endblock%}

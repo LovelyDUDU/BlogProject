@@ -9,8 +9,11 @@ class Blog(models.Model): #Blog 라는 클래스 선언
     def __str__(self):
         return self.title
     
+    def sumtitle(self):
+        return self.title[:5]
+
     def summary(self):
-        return self.body[:100]
+        return self.body[:10]
 
 
 class Portfolio(models.Model):
